@@ -1,0 +1,10 @@
+package com.actions;
+
+import org.openqa.selenium.WebDriver;
+
+public class HomePageActions {
+	
+	WebDriver driver;
+	String URL="";
+
+}

@@ -1,0 +1,35 @@
+package Tesco;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+public class BasicCheck {
+	
+	public WebDriver driver;
+	
+	@BeforeTest
+	public void OpenBrowser() {
+		
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\kiran\\Documents\\chromedriver.exe");
+		driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		
+		
+	}
+	
+	@Test
+	public void tescoHomePage() {
+		
+		driver.get("https://www.tesco.com");
+		
+	}
+	
+	@AfterTest
+	public void CloseBrowser() {
+		
+	}
+
+}

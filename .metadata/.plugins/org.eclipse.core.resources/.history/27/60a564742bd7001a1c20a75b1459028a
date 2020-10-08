@@ -1,0 +1,19 @@
+package com.actions;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.BeforeClass;
+
+public class ForgotPasswordActions {
+	
+	WebDriver driver;
+	String URL="https://www.moltonbrown.co.uk";
+	
+	
+	@BeforeClass
+	public void openBrowser()
+	{
+		
+	}
+	
+
+}

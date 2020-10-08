@@ -1,0 +1,14 @@
+package com.pageActions;
+import org.openqa.selenium.WebDriver;
+
+import com.pageElements.*;
+
+public class HomePageActions {
+	
+	WebDriver driver=null;
+	
+	String URL="https://www.moltonbrown.co.uk";
+	
+	
+
+}

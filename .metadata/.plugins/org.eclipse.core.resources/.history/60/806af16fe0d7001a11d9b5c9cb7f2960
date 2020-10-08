@@ -1,0 +1,24 @@
+package com.actions;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+
+public class RegisterActions {
+	
+	WebDriver driver;
+	String URL="https://www.moltonbrown.co.uk";
+	
+	@BeforeClass
+	public void openBrowser()
+	{
+		
+	}
+	
+	@AfterClass
+	public void closeBrowser()
+	{
+		
+	}
+
+}

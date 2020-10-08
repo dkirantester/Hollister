@@ -1,0 +1,25 @@
+package com.pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class Login {
+	
+	WebElement element;
+	WebDriver driver;
+	
+	
+	public WebElement email()
+	{
+		return element=driver.findElement(By.xpath(""));
+		
+	}
+	
+	public WebElement password()
+	{
+		return element=driver.findElement(By.xpath(""));
+		
+	}
+
+}

@@ -1,0 +1,11 @@
+package com.pageElements;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class Login {
+
+	WebElement element=null;
+	WebDriver driver=null;
+	
+}

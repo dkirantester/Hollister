@@ -1,0 +1,23 @@
+package com.actions;
+
+import org.openqa.selenium.WebDriver;
+
+public class CheckOut {
+
+	WebDriver driver;
+	String URL="https://www.moltonbrown.co.uk";
+	
+	
+	public void openBrowser()
+	{
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\kiran\\Documents\\chromedriver.exe");
+		
+	}
+	
+	
+	
+	public void closeBrowser()
+	{
+		
+	}
+}

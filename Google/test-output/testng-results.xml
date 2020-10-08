@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="8406" started-at="2020-07-30T12:32:50Z" finished-at="2020-07-30T12:32:58Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="8406" started-at="2020-07-30T12:32:50Z" finished-at="2020-07-30T12:32:58Z">
+      <class name="POMTest.HomePageActions">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:POMTest.HomePageActions@48524010]" name="openBrowser" is-config="true" duration-ms="6285" started-at="2020-07-30T12:32:50Z" finished-at="2020-07-30T12:32:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="executeHomepage()[pri:0, instance:POMTest.HomePageActions@48524010]" name="executeHomepage" duration-ms="253" started-at="2020-07-30T12:32:56Z" finished-at="2020-07-30T12:32:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executeHomepage -->
+        <test-method status="PASS" signature="executeclicksearch()[pri:0, instance:POMTest.HomePageActions@48524010]" name="executeclicksearch" duration-ms="1741" started-at="2020-07-30T12:32:56Z" finished-at="2020-07-30T12:32:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executeclicksearch -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:POMTest.HomePageActions@48524010]" name="closeBrowser" is-config="true" duration-ms="94" started-at="2020-07-30T12:32:58Z" finished-at="2020-07-30T12:32:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- POMTest.HomePageActions -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

@@ -1,0 +1,18 @@
+package MoltonBrown;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import Pages.SignIn;
+import Pages.Homepage;
+
+public class TestPOM {
+	
+	static WebDriver driver;
+    static String URL="https://www.moltonbrown.co.uk/"; 
+
+	
+
+	}
+
+

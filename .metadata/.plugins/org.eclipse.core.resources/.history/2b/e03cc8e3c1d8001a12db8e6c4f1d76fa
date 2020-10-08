@@ -1,0 +1,22 @@
+package com.actions;
+
+import org.openqa.selenium.WebDriver;
+
+public class CheckOut {
+
+	WebDriver driver;
+	String URL="https://www.moltonbrown.co.uk";
+	
+	
+	public void opneBrowser()
+	{
+		
+	}
+	
+	
+	
+	public void closeBrowser()
+	{
+		
+	}
+}

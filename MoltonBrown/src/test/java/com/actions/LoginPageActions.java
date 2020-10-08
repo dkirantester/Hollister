@@ -1,0 +1,63 @@
+package com.actions;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+import com.pages.Homepage;
+import com.pages.Login;
+
+public class LoginPageActions {
+	
+	WebDriver driver;
+	String URL="https://www.moltonbrown.co.uk";
+	
+	@BeforeClass
+	public void openbrowser()
+	{
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\kiran\\Documents\\chromedriver.exe");
+		driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get(URL);
+		
+	}
+	
+	
+	@Test
+	public void homepagetests()
+	{
+		Homepage homepage=new Homepage(driver);
+		homepage.clickmyaccount();
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+	}
+	
+	
+	@Test
+	public void invalidLogin()
+	{
+		Login login=new Login(driver);
+		login.enterEmail("tt@gmail.com");
+		login.enterPassword("password");
+		login.loginButton();
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		//login.forgotPassword();
+		login.registerButtonClick();
+				
+	}
+	
+	
+	
+	@AfterClass
+	public void closebrowser()
+	{
+		System.out.println(driver.getCurrentUrl());
+		System.out.println(driver.getTitle());
+		driver.close();
+	}
+	
+
+}

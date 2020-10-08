@@ -1,0 +1,38 @@
+package com.pageElements;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class HomePage {
+	
+	WebElement element=null;
+	WebDriver driver=null;
+	
+	public void clicksearchicon()
+	{
+		searchicon().click();
+	}
+	
+	public void clickmyaccount()
+	{
+		myaccount().click();
+	}
+	
+	
+	
+	public WebElement searchicon()
+	{
+		return element=driver.findElement(By.xpath("//*[@id=\"mainBar\"]/div/div[2]/app-header/app-header-submenu/div[1]/div/div[3]/form/button/img"));
+		
+	}
+	
+	public WebElement myaccount()
+	{
+		return element=driver.findElement(By.xpath("//*[@id=\"mainBar\"]/div/div[2]/app-header/div[1]/div/div/div[2]/ul/li[4]/a/span"));
+		
+	}
+	
+	
+
+}

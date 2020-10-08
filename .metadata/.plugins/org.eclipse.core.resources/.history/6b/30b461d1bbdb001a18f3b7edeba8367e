@@ -1,0 +1,36 @@
+package com.actions;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+public class HomePageActions {
+	
+	WebDriver driver;
+	String URL="https://www.hollisterco.com/shop/uk";
+
+	
+	@BeforeClass
+	public void SetUp()
+	{
+		
+		
+	}
+	
+	
+	@Test
+	public void executeHomePage()
+	{
+		
+	}
+	
+	
+	
+	
+	@AfterClass
+	public void TearDown()
+	{
+		
+	}
+}

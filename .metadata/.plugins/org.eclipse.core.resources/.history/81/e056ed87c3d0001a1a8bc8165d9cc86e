@@ -1,0 +1,37 @@
+package Pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class Homepage {
+	
+	
+	static WebElement element=null;
+	
+	
+	public void searchboxfieldclick(WebDriver driver)
+	{
+	   Homepage.searchboxField(driver).click();
+	}
+	
+	public void accountlinkclick(WebDriver driver)
+	{
+		Homepage.accountLink(driver).click();
+	}
+	
+	
+	public static WebElement searchboxField(WebDriver driver)
+	{
+		element=driver.findElement(By.xpath("//*[@id=\"mainBar\"]/div/div[2]/app-header/app-header-submenu/div[1]/div/div[3]/form/button/img"));
+		return element;
+	}
+	
+	public static WebElement accountLink(WebDriver driver)
+	{
+		element = driver.findElement(By.xpath("//*[@id=\"mainBar\"]/div/div[2]/app-header/div[1]/div/div/div[2]/ul/li[4]/a/span"));
+		return element;
+	}
+	
+	
+}

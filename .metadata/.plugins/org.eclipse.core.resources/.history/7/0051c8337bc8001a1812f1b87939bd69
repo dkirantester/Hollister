@@ -1,0 +1,40 @@
+package All;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+public class HomePage {
+	
+	public WebDriver driver;
+	public String URL="https://www.tesco.com";
+	@BeforeTest
+	public void openBrowser()
+	{
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\kiran\\Documents\\chromedriver.exe");
+		driver=new ChromeDriver();
+		
+	}
+	
+	@Test
+	public void HomePage()
+	{
+		
+	}
+	
+	@Test
+	public void VerifyTitle()
+	{
+		
+	}
+	
+	
+	@AfterTest
+	public void closeBrowser()
+	{
+		
+	}
+
+}

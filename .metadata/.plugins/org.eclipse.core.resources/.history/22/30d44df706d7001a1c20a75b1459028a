@@ -1,0 +1,11 @@
+package com.actions;
+
+import org.openqa.selenium.WebDriver;
+
+public class LoginPageActions {
+	
+	WebDriver driver;
+	String URL="https://www.moltonbrown.co.uk";
+	
+
+}

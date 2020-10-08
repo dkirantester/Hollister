@@ -1,0 +1,69 @@
+package com.pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+
+public class Homepage {
+	
+	WebElement element;
+	
+	WebDriver driver;
+	
+	public Homepage(WebDriver driver)
+	{
+		this.driver=driver;
+	}
+	
+	
+	public void clicksearchicon()
+	{
+		searchicon().click();
+	}
+	
+	public void entertextintosearchfield(String text)
+	{
+		searchboxfield().sendKeys(text);
+	}
+	
+	public void clickmyaccount()
+	{
+		myaccount().click();
+	}
+	
+	
+	public void hoverontoHand()
+	{
+		//Actions mouseHover=new Actions(driver);
+		hand().click();
+		//mouseHover.moveToElement(element).build().perform();
+
+	}
+	
+	
+	public WebElement searchicon()
+	{
+		return element=driver.findElement(By.xpath("//*[@id=\"mainBar\"]/div/div[2]/app-header/app-header-submenu/div[1]/div/div[3]/form/button/img"));
+		
+	}
+	
+	public WebElement searchboxfield()
+	{
+		return element=driver.findElement(By.xpath("//*[@id=\"product_channel\"]"));
+		
+	}
+	
+	public WebElement myaccount()
+	{
+		return element=driver.findElement(By.xpath("//*[@id=\"mainBar\"]/div/div[2]/app-header/div[1]/div/div/div[2]/ul/li[4]/a/span"));
+		
+	}
+	
+   public WebElement hand()
+   {
+	return element=driver.findElement(By.xpath("//*[@id=\"mainBar\"]/div/div[2]/app-header/app-header-submenu/div[3]/app-menu/div[1]/div/ul/li[1]/a"));
+	   
+   }
+
+}

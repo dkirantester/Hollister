@@ -1,0 +1,71 @@
+package PageObjects;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+import Pages.HomePage;
+import Pages.AccountLogin;
+import Pages.BrowserManage;
+import Pages.SignOut;
+
+public class POMHomepage {
+	
+	WebDriver driver=null;
+	BrowserManage browsermanager=new BrowserManage(driver);
+	
+	@BeforeClass
+	public void openbrowser()
+	{
+		driver=browsermanager.openBrowser();
+	}
+	
+    @Test
+	public void executeHomePage()
+	{
+		HomePage homepage=new HomePage(driver);
+		homepage.enterTextinSearchBox();
+		homepage.searchLink();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		homepage.accountLink();
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS); 
+	
+	}
+	
+
+    @Test
+	public void executeHomePage1()
+	{
+		HomePage homepage=new HomePage(driver);
+		homepage.enterTextinSearchBox();
+		homepage.searchLink();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		homepage.accountLink();
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS); 
+	
+	}
+		
+    @Test
+	public void executeHomePage2()
+	{
+		HomePage homepage=new HomePage(driver);
+		homepage.enterTextinSearchBox();
+		homepage.searchLink();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		homepage.accountLink();
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS); 
+	
+	}
+    
+    
+	@AfterClass
+	public void closebrowser()
+	{
+		browsermanager.closeBrowser();
+	}
+	
+}

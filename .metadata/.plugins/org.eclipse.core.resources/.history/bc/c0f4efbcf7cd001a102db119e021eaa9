@@ -1,0 +1,56 @@
+package MoltonBrown;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+import Pages.SignIn;
+import Pages.Homepage;
+
+public class TestPOM {
+	
+	static WebDriver driver;
+    static String URL="https://www.moltonbrown.co.uk/"; 
+
+	@BeforeTest
+	public void openBrowser()
+	{
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\kiran\\Documents\\chromedriver.exe");
+		driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get(URL);
+
+	}
+
+	
+	@Test (priority=0)
+	public static void executeHomepage()
+	{
+		Homepage homepage=new Homepage();
+		Homepage.searchboxfieldclick(driver);
+		Homepage.accountlinkclick(driver);
+	}
+	
+	
+	@Test (priority=1)
+	public static void executesignIn()
+	{
+		SignIn signin=new SignIn();
+		SignIn.enterEmail(driver);
+		SignIn.entePassword(driver);
+		SignIn.loginButton(driver);
+		
+	}
+	
+	@AfterTest
+	public void closeBrowser()
+	{
+		driver.close();
+	}
+	
+	
+	}
+
+

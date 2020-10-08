@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;POMTest.PageObjects&apos; to &apos;HomePageActions&apos;&#x0D;&#x0A;- Original project: &apos;Google&apos;&#x0D;&#x0A;- Original element: &apos;POMTest.PageObjects&apos;&#x0D;&#x0A;- Renamed element: &apos;POMTest.HomePageActions&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;PageObjects&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/&lt;POMTest{PageObjects.java[PageObjects" matchStrategy="1" name="HomePageActions" qualified="false" references="true" similarDeclarations="false" stamp="1596111091635" textual="false" version="1.0"/>
+</session>

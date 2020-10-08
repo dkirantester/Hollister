@@ -1,0 +1,48 @@
+package com.pageElements;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class Login {
+
+	WebElement element=null;
+	WebDriver driver=null;
+	
+	
+	public void enteremail(String emailtext)
+	{
+		email().sendKeys(emailtext);
+	}
+	
+	public void enterpassword(String passwortext)
+	{
+		email().sendKeys(passwortext);
+	}
+	
+	
+	public void clicklogin()
+	{
+		loginbutton().click();
+	}
+	
+	
+	public WebElement email()
+	{
+		return element=driver.findElement(By.xpath("//*[@id=\"mainBar\"]/div/main/app-registration/section/div/div/div[1]/div/form/div[1]/input"));
+		
+	}
+	
+	public WebElement password()
+	{
+		return element=driver.findElement(By.xpath("//*[@id=\"mainBar\"]/div/main/app-registration/section/div/div/div[1]/div/form/div[2]/input"));
+		
+	}
+	
+	public WebElement loginbutton()
+	{
+		return element=driver.findElement(By.xpath("	//*[@id=\"mainBar\"]/div/main/app-registration/section/div/div/div[1]/div/form/div[3]/button"));
+		
+	}
+	
+}
